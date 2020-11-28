@@ -13,7 +13,7 @@ import { ConfigService } from '@nestjs/config';
     AuthModule,
     ProductsModule,
     UserModule,
-    MongooseModule.forRoot('mongodb://localhost/nest-test')
+    MongooseModule.forRoot('mongodb+srv://baayxaliil:daldiam7@cluster0.gchcm.mongodb.net/nest-test?retryWrites=true&w=majority')
   ],
   controllers: [AppController],
   providers: [AppService, ConfigService],

@@ -14,6 +14,7 @@ async function bootstrap() {
     whitelist: true,
     forbidNonWhitelisted: true
   }))
-  await app.listen(configService.get('PORT') || '80');
+  await app.listen(configService.get('PORT') || 5000);
 }
-bootstrap();
+
+module.exports = bootstrap;

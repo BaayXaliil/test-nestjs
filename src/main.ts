@@ -17,4 +17,4 @@ async function bootstrap() {
   await app.listen(configService.get('PORT') || 5000);
 }
 
-module.exports = bootstrap;
+bootstrap();
